@@ -1,0 +1,154 @@
+body {
+    margin: 0px;
+    border: 0px;
+    font-family: 'Arial', sans-serif;
+    background-color: #0E100E;
+    color: #D2D2D2;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+
+.menu-open {
+    width: 100%;
+}
+
+header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202332;
+    border-bottom: 2px solid #f5eae1;
+    margin-bottom: 50px;
+}
+
+h1, p {
+  margin-left: 50px;
+}
+
+h2{
+  margin-left: 50px;
+  text-decoration: underline;
+}
+
+.h2 {
+  display: flex;
+  align-items: center;
+}
+
+h3{
+  margin-left: 50px;
+  padding-top: 50px;
+  text-decoration: underline;
+}
+
+h1{
+  margin-bottom: 50px;
+}
+
+
+p {
+  font-size: 24px;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F5EAE1;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+.burger-menu {
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav li {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .menu-overlay {
+        width: 0;
+    }
+
+    .menu-overlay.menu-open {
+        width: 100%;
+    }
+}
+
+.nav-links a {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.img {
+  padding: 20px;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  padding-left: 15px; 
+}
+
+.lngimg {
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
